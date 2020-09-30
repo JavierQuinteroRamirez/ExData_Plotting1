@@ -34,6 +34,7 @@ plot1name = "plot1.png"
 if (file.exists(plot1name)) { 
   file.remove(plot1name)
 }
+
 library(datasets)
 gap<- as.numeric(as.character(finaldata$Global_active_power))
 png(plot1name, width = 480, height = 480)
